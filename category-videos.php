@@ -6,7 +6,7 @@
 get_header(); ?>
 			
 <h1 class="entry-title">Centennial Stories</h1>
-<section class="">
+<section class="video-page">
 	<?php
 		$args = array( 
 			'order'			=> 'ASC',
@@ -18,20 +18,15 @@ get_header(); ?>
 		if( $main_posts->have_posts() ):
 			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
 				
-				<article>
+				<article class="video-page--featured">
 					
 					<!-- <a href="<?php the_permalink(); ?>" ><h2 class=""><?php the_title(); ?></h2></a> -->
 					<div class="">
-						<!--<p class="purple"><?php the_field ('video_short_story'); ?></p>-->
-						<!-- <?php if (get_field('video_short_story')) : ?>-->
-						<!-- <a href="<?php the_permalink(); ?>" class="button btn-purple" style="margin-bottom:0;"><?php the_field ('video_short_story'); ?></a> -->
-						<!-- <?php else: ?> -->
-						<!-- <a href="<?php the_permalink(); ?>" class="button btn-purple" style="margin-bottom:0;">Watch More</a> -->
-						<!-- <?php endif; ?> -->
-						<h1 class="">Stories</h1>
-						<div class="">
-							<p class="">By telling our stories we can reduce the stigma associated with mental illness and make those who need it more comfortable asking for help. This page features the stories of courageous young people in the Detroit Jewish community talking about their own mental health struggles and communal professionals offering guidance for teens.</p>
-						</div>
+						
+					
+						<a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"></a>
+						
+						
 					</div>
                 </article>
 
@@ -44,13 +39,8 @@ get_header(); ?>
 	<?php wp_reset_query();?>	
 </section>
 
-<div class="">
-	<div class="">
-	<p class="">Hear local young people and parents share their mental health related challenges and the steps that they took to heal. </p>
-	</div>
-</div>
 <!-- THE LØØP -->
-<div class="">
+<div class="related-articles alignwide">
 	<?php
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 		$args = array(
@@ -63,13 +53,15 @@ get_header(); ?>
 		$count = 0;
 		if( $main_posts->have_posts() ):
 			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
-				<div class="">
-					<a href="<?php the_permalink(); ?>" class="video-thumb"><?php the_post_thumbnail('full'); ?></a>
-					<div class="">
-						<h4><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-						
-					</div>
-				</div>
+				<div class="related-articles--item">
+            
+            <a href="<?php the_permalink()?>" class="related-articles--item--img"><?php the_post_thumbnail(); ?></a>
+            <div class="related-articles--item--content">
+                <a href="<?php the_permalink()?>"><h3 class="related-articles--item--title"><?php the_title(); ?></h3></a>
+                <!-- <?php the_excerpt( '<p class="entry-excerpt">', '</p>' ); ?> -->
+                <a href="<?php the_permalink()?>" class="related-articles--item--link">Read More</a>
+            </div>
+        </div>
 			<?php endwhile; ?>			
 		<?php endif;  ?>
 		<?php wp_reset_query();?>		
@@ -78,11 +70,6 @@ get_header(); ?>
 	<!-- <?php echo do_shortcode('[ajax_load_more id="Personal" container_type="div" css_classes="grid-x grid-padding-x grid-margin-x pl-2 pr-2" post_type="video" posts_per_page="3" category="personal" pause="true" scroll="false" transition_container="false" images_loaded="true" offset="3" button_label="Load More Videos"]') ?>-->
 
 <!-- END LØØP -->
-<div class="grid-x grid-padding-x grid-margin-x pt-2 pb-1 pl-2 pr-2 contained">
-	<div class="cell">
-		<h2 class="purple"><?php the_field('story_category_two')?></h2>
-		<p class="purple border-bottom pb-1" style="max-width:500px;">Hear local experts share their insights into this epidemic and what we all should know about youth mental health. </p>
-	</div>
-</div>
-</div>	
+
+	
 <?php get_footer(); ?>
