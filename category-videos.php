@@ -25,7 +25,7 @@ get_header(); ?>
 					<div class="">
 						
 					
-						<a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"><h2></h2><?php the_title(); ?></h2></a>
+					<h2><a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
 						
 					</div>
