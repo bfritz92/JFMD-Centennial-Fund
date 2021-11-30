@@ -3659,7 +3659,7 @@ pre.wp-block-preformatted {
      object-fit: cover;
 }
 
-.singular .entry-title {
+header .entry-title {
   font-size: 4rem;
   font-weight: 700;
   display: -webkit-box;
@@ -3673,7 +3673,7 @@ pre.wp-block-preformatted {
   padding-left: 10px;
 }
 
-.singular .entry-title:before {
+header .entry-title:before {
   content: "";
   background: var(--global--gradient-dark);
   display: inline-block;
