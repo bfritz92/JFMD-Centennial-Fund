@@ -6,7 +6,7 @@
 get_header(); ?>
 			
 
-<article class="video-page alignwide">
+<article class="video-page alignwide singular">
 	<h1 class="entry-title">Centennial Stories</h1>
 	<?php
 		$args = array( 
@@ -38,7 +38,7 @@ get_header(); ?>
 			<?php endwhile; ?>			
 		<?php endif;  ?>
 	<?php wp_reset_query();?>	
-</section>
+				</article>
 
 <!-- THE LØØP -->
 <div class="related-articles alignwide">
