@@ -21,12 +21,12 @@ get_header(); ?>
 				
 				<article class="video-page--featured">
 					
-					<!-- <a href="<?php the_permalink(); ?>" ><h2 class=""><?php the_title(); ?></h2></a> -->
+					<!-- <a href="<?php the_permalink(); ?>" ><h2 class=""></h2></a> -->
 					<div class="">
 						
 					
-						<a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"></a>
-						
+						<a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"><?php the_title(); ?></a>
+						<?php the_excerpt(); ?>
 						
 					</div>
                 </article>
