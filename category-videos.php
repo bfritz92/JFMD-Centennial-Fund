@@ -5,8 +5,9 @@
 
 get_header(); ?>
 			
-<h1 class="entry-title">Centennial Stories</h1>
-<section class="video-page">
+
+<article class="video-page alignwide">
+	<h1 class="entry-title">Centennial Stories</h1>
 	<?php
 		$args = array( 
 			'order'			=> 'ASC',
