@@ -3772,6 +3772,14 @@ article.post_format-post-format-video p {
   color: #fff;
 }
 
+.related-articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--responsive--spacing-horizontal);
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;

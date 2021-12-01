@@ -645,3 +645,11 @@ article.post_format-post-format-video {
     color: #fff;
   }
 }
+
+.related-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--responsive--spacing-horizontal);
+  &--info {
+  }
+}
