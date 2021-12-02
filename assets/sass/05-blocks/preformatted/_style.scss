@@ -655,3 +655,14 @@ article.post_format-post-format-video {
   &--info {
   }
 }
+
+.video-page {
+  &--featured {
+    display: flex;
+    flex-wrap: wrap;
+    div,
+    a {
+      flex-basis: 50%;
+    }
+  }
+}

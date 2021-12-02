@@ -3781,6 +3781,20 @@ article.post_format-post-format-video p {
   justify-items: center;
 }
 
+.video-page--featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video-page--featured div,
+.video-page--featured a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 .wp-block-pullquote {
   padding: calc(2 * var(--global--spacing-unit)) 0;
   text-align: center;
