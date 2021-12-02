@@ -5,7 +5,7 @@
 
 get_header(); ?>
 			
-			<h1 class="entry-title">Centennial Stories</h1>
+			<h1 class="entry-title alignwide">Centennial Stories</h1>
 <article class="video-page alignwide singular">
 	
 	<?php
