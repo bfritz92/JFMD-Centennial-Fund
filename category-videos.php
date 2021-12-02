@@ -18,7 +18,7 @@ get_header(); ?>
 		if( $main_posts->have_posts() ):
 			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
 				
-				<article class="video-page--featured">
+				<article class="video-page--featured alignwide">
 					
 					<!-- <a href="<?php the_permalink(); ?>" ><h2 class=""></h2></a> -->
 					<div class="">
