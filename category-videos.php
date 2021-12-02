@@ -29,12 +29,11 @@ get_header(); ?>
 						<?php the_excerpt(); ?>
 						
 					</div>
+					<a href="<?php the_permalink()?>" class="related-articles--item--img"><?php the_post_thumbnail(); ?></a>	
+
                 </article>
 
-				<div class="">
-                <iframe src="https://player.vimeo.com/video/<?php the_field ('vimeo_embed'); ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-				</div>	
-
+				
 			<?php endwhile; ?>			
 		<?php endif;  ?>
 	<?php wp_reset_query();?>	
