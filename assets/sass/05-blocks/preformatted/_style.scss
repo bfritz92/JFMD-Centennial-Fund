@@ -549,7 +549,7 @@ pre.wp-block-preformatted {
 //REGULAR PAGE STUFF
 
 //Blue block next to page titles
-header .entry-title {
+.entry-title {
   //font-size: var(--global--font-size-page-title);
   font-size: 4rem;
   font-weight: 700;
@@ -650,6 +650,8 @@ article.post_format-post-format-video {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--responsive--spacing-horizontal);
+  justify-items: center;
+
   &--info {
   }
 }

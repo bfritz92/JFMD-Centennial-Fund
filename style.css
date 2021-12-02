@@ -3659,7 +3659,7 @@ pre.wp-block-preformatted {
      object-fit: cover;
 }
 
-header .entry-title {
+.entry-title {
   font-size: 4rem;
   font-weight: 700;
   display: -webkit-box;
@@ -3673,7 +3673,7 @@ header .entry-title {
   padding-left: 10px;
 }
 
-header .entry-title:before {
+.entry-title:before {
   content: "";
   background: var(--global--gradient-dark);
   display: inline-block;
@@ -3778,6 +3778,7 @@ article.post_format-post-format-video p {
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--responsive--spacing-horizontal);
+  justify-items: center;
 }
 
 .wp-block-pullquote {
