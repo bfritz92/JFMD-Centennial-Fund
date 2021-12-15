@@ -673,6 +673,9 @@ article.post_format-post-format-video {
   &--item {
     &--link {
       float: right;
+      &--content {
+        padding-top: var(--global--spacing-horizontal);
+      }
     }
   }
 }

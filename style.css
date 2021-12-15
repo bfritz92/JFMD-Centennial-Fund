@@ -1668,7 +1668,7 @@ a:hover {
 
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
   background: rgba(0, 0, 0, 0.9);
-  color: var(--wp--style--color--link, var(--global--color-white));
+  color: var(--global--color-gray);
 }
 
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) .meta-nav {
@@ -3813,6 +3813,10 @@ article.post_format-post-format-video p {
 
 .related-articles--item--link {
   float: right;
+}
+
+.related-articles--item--link--content {
+  padding-top: var(--global--spacing-horizontal);
 }
 
 .video-page--featured {
