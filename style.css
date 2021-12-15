@@ -3772,6 +3772,10 @@ article.post_format-post-format-video p {
   color: #fff;
 }
 
+.category-videos .related-articles:first-child {
+  grid-column: 1/-1;
+}
+
 .related-articles {
   display: -ms-grid;
   display: grid;
