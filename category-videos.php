@@ -6,38 +6,6 @@
 get_header(); ?>
 			
 			<h1 class="entry-title alignwide">Centennial Stories</h1>
-	
-	<?php
-		$args = array( 
-			'order'			=> 'ASC',
-			'orderby'		=> 'rand',									
-			'posts_per_page'=> 1,
-		);		
-		$main_posts = new WP_Query( $args );
-		$count = 0;
-		if( $main_posts->have_posts() ):
-			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
-				
-				<article class="video-page--featured alignwide">
-					
-					<!-- <a href="<?php the_permalink(); ?>" ><h2 class=""></h2></a> -->
-					<div class="">
-						
-					
-					<h2><a href="<?php the_permalink(); ?>" class="" style="margin-bottom:0;"><?php the_title(); ?></a></h2>
-						<?php the_excerpt(); ?>
-						
-					</div>
-					<a href="<?php the_permalink()?>" class="related-articles--item--img"><?php the_post_thumbnail(); ?></a>	
-
-                </article>
-
-				
-			<?php endwhile; ?>			
-		<?php endif;  ?>
-	<?php wp_reset_query();?>	
-				
-
 <!-- THE LØØP -->
 <div class="related-articles alignwide">
 	<?php

@@ -49,9 +49,9 @@ $baseline-unit: 10px;
   --heading--line-height-h2: var(--global--line-height-heading);
   --heading--line-height-h1: var(--global--line-height-page-title);
 
-  --heading--font-weight: normal;
-  --heading--font-weight-page-title: 300;
-  --heading--font-weight-strong: 600;
+  --heading--font-weight: 700;
+  --heading--font-weight-page-title: 700;
+  --heading--font-weight-strong: 700;
 
   /* Block: Latest posts */
   --latest-posts--title-font-family: var(--heading--font-family);
@@ -79,10 +79,10 @@ $baseline-unit: 10px;
     rgba(206, 234, 237, 1) 0%,
     rgba(206, 211, 233, 1) 100%
   );
-  --global--gradient-light-transparent:linear-gradient(
-    175deg, 
-    rgba(238,250,251,.8) 28%, 
-    rgba(236,238,250,.8) 100%
+  --global--gradient-light-transparent: linear-gradient(
+    175deg,
+    rgba(238, 250, 251, 0.8) 28%,
+    rgba(236, 238, 250, 0.8) 100%
   );
   --global--gradient-dark: linear-gradient(
     135deg,
