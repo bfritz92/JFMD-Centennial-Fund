@@ -25,7 +25,7 @@ get_header(); ?>
             <a href="<?php the_permalink()?>" class="related-articles--item--img"><?php the_post_thumbnail(); ?></a>
             <div class="related-articles--item--content">
                 <a href="<?php the_permalink()?>"><h3 class="related-articles--item--title"><?php the_title(); ?></h3></a>
-                <!-- <?php the_excerpt( '<p class="entry-excerpt">', '</p>' ); ?> -->
+                <?php the_excerpt( '<p class="entry-excerpt">', '</p>' ); ?>
                 <a href="<?php the_permalink()?>" class="related-articles--item--link">Read More</a>
             </div>
         </div>
