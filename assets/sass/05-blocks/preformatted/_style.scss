@@ -677,6 +677,9 @@ article.post_format-post-format-video {
         padding-top: var(--global--spacing-horizontal);
       }
     }
+    &--img img {
+      height: auto !important;
+    }
   }
 }
 

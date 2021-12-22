@@ -3819,6 +3819,10 @@ article.post_format-post-format-video p {
   padding-top: var(--global--spacing-horizontal);
 }
 
+.related-articles--item--img img {
+  height: auto !important;
+}
+
 .video-page--featured {
   display: -webkit-box;
   display: -ms-flexbox;
