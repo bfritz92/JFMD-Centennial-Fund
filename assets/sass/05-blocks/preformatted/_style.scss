@@ -646,6 +646,22 @@ article.post_format-post-format-video {
   }
 }
 
+//Video Category Styling
+.video-page--featured {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: start;
+  gap: var(--global--spacing-horizontal);
+  div {
+    height: max-content;
+    max-width: 500px;
+  }
+  a {
+    height: max-content;
+    width: max-content;
+  }
+}
+
 .related-articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -653,6 +669,14 @@ article.post_format-post-format-video {
   justify-items: center;
 
   &--info {
+  }
+  &--item {
+    &--link {
+      float: right;
+      &--content {
+        padding-top: var(--global--spacing-horizontal);
+      }
+    }
   }
 }
 
