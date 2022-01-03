@@ -3773,6 +3773,10 @@ article.post_format-post-format-video p {
   color: #fff;
 }
 
+.category-videos .entry-title {
+  font-size: var(--global--font-size-page-title);
+}
+
 .category-videos .related-articles {
   padding: 0 var(--global--spacing-horizontal);
 }
@@ -3790,6 +3794,9 @@ article.post_format-post-format-video p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: calc(2 * var(--global--spacing-horizontal));
   }
   .category-videos .related-articles--item:first-child--img {
@@ -3799,6 +3806,7 @@ article.post_format-post-format-video p {
   .category-videos .related-articles--item:first-child-content {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
+    max-width: 650px;
   }
 }
 
