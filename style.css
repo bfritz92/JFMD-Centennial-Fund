@@ -3772,7 +3772,7 @@ article.post_format-post-format-video p {
   color: #fff;
 }
 
-@media only screen and (min-width: 592px) {
+@media only screen and (min-width: 822px) {
   .category-videos .related-articles--item:first-child {
     grid-column: 1/-1;
     -webkit-box-orient: horizontal;

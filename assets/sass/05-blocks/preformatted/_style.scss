@@ -650,7 +650,7 @@ article.post_format-post-format-video {
 .category-videos {
   .related-articles {
     &--item:first-child {
-      @include media(tablet) {
+      @include media(desktop) {
         grid-column: 1/-1;
         flex-direction: row;
         display: flex;
