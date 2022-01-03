@@ -3810,6 +3810,10 @@ article.post_format-post-format-video p {
   }
 }
 
+.single-post .entry-title {
+  font-size: var(--global--font-size-h1);
+}
+
 .related-articles {
   display: -ms-grid;
   display: grid;

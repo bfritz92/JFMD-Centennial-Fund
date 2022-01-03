@@ -673,6 +673,10 @@ article.post_format-post-format-video {
   }
 }
 
+.single-post .entry-title {
+  font-size: var(--global--font-size-h1);
+}
+
 .related-articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
