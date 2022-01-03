@@ -648,7 +648,7 @@ article.post_format-post-format-video {
 
 //Video Category Styling
 .category-videos {
-  .related-aticles {
+  .related-articles {
     &--item:first-child {
       @include media(tablet) {
         grid-column: 1/-1;

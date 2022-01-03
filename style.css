@@ -3773,7 +3773,7 @@ article.post_format-post-format-video p {
 }
 
 @media only screen and (min-width: 592px) {
-  .category-videos .related-aticles--item:first-child {
+  .category-videos .related-articles--item:first-child {
     grid-column: 1/-1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3787,11 +3787,11 @@ article.post_format-post-format-video p {
             align-items: center;
     gap: calc(2 * var(--global--spacing-horizontal));
   }
-  .category-videos .related-aticles--item:first-child--img {
+  .category-videos .related-articles--item:first-child--img {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
   }
-  .category-videos .related-aticles--item:first-child-content {
+  .category-videos .related-articles--item:first-child-content {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
   }
