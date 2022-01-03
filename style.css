@@ -3772,34 +3772,21 @@ article.post_format-post-format-video p {
   color: #fff;
 }
 
-.video-page--featured {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  gap: var(--global--spacing-horizontal);
-}
-
-.video-page--featured div {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  max-width: 500px;
-}
-
-.video-page--featured a {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+@media only screen and (min-width: 592px) {
+  .category-videos .related-aticles--item:first-child {
+    grid-column: 1/-1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: calc(2 * var(--global--spacing-horizontal));
+  }
 }
 
 .related-articles {

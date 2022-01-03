@@ -647,18 +647,19 @@ article.post_format-post-format-video {
 }
 
 //Video Category Styling
-.video-page--featured {
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: start;
-  gap: var(--global--spacing-horizontal);
-  div {
-    height: max-content;
-    max-width: 500px;
-  }
-  a {
-    height: max-content;
-    width: max-content;
+.category-videos {
+  .related-aticles {
+    &--item:first-child {
+      @include media(tablet) {
+        grid-column: 1/-1;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: calc(2 * var(--global--spacing-horizontal));
+        a {
+        }
+      }
+    }
   }
 }
 
