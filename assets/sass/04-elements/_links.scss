@@ -36,9 +36,8 @@ a:hover {
 
   // Change colors when the body background is white.
   .has-background-white & {
-    background: rgba(0, 0, 0, 0.9);
+    //background: rgba(0, 0, 0, 0.9);
     color: var(--global--color-gray);
-
     .meta-nav {
       color: var(--wp--style--color--link, var(--global--color-white));
     }

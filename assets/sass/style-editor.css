@@ -560,7 +560,6 @@ a:hover {
 }
 
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
-  background: rgba(0, 0, 0, 0.9);
   color: var(--global--color-gray);
 }
 
