@@ -656,7 +656,11 @@ article.post_format-post-format-video {
         display: flex;
         align-items: center;
         gap: calc(2 * var(--global--spacing-horizontal));
-        a {
+        &--img {
+          flex-basis: 40%;
+        }
+        &-content {
+          flex-basis: 60%;
         }
       }
     }
