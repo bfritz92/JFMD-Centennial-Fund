@@ -691,3 +691,12 @@ article.post_format-post-format-video {
     }
   }
 }
+
+.subhead {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 3vw, 4rem);
+  font-weight: 300;
+  color: #8e8e8e;
+  line-height: 0.8;
+}
