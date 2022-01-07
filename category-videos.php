@@ -6,8 +6,8 @@
 get_header(); ?>
 			
 			<span class="entry-title">
-				<h1>Centennial Stories</h1>
-			<h3 class="entry-subtitle alignwide">Meet some of the participants to this historic community campaign</h3>
+				<span></span><h1>Centennial Stories</h1>
+			<h3 class="entry-subtitle alignwide">Meet some of the participants to this historic community campaign</h3></span>
 </span>
 <!-- THE LØØP -->
 <div class="related-articles alignwide">
