@@ -653,23 +653,6 @@ article.post_format-post-format-video {
   }
   .related-articles {
     padding: 0 var(--global--spacing-horizontal);
-    &--item:first-child {
-      @include media(desktop) {
-        grid-column: 1/-1;
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: calc(2 * var(--global--spacing-horizontal));
-        &--img {
-          flex-basis: 40%;
-        }
-        &-content {
-          flex-basis: 60%;
-          max-width: 650px;
-        }
-      }
-    }
   }
 }
 

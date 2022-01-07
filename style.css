@@ -3780,35 +3780,6 @@ article.post_format-post-format-video p {
   padding: 0 var(--global--spacing-horizontal);
 }
 
-@media only screen and (min-width: 822px) {
-  .category-videos .related-articles--item:first-child {
-    grid-column: 1/-1;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: calc(2 * var(--global--spacing-horizontal));
-  }
-  .category-videos .related-articles--item:first-child--img {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-  .category-videos .related-articles--item:first-child-content {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-    max-width: 650px;
-  }
-}
-
 .single-post .entry-title {
   font-size: var(--global--font-size-h1);
 }
