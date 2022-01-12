@@ -3797,7 +3797,7 @@ article.post_format-post-format-video p {
   float: right;
 }
 
-.related-articles--item--link:before {
+.related-articles--item--img:before {
   position: relative;
   top: 46%;
   left: 50%;
@@ -3813,11 +3813,11 @@ article.post_format-post-format-video p {
   display: block;
 }
 
-.related-articles--item--link:hover:before, .related-articles--item--link:focus:before {
+.related-articles--item--img:hover:before, .related-articles--item--img:focus:before {
   opacity: 1;
 }
 
-.related-articles--item--link--content {
+.related-articles--item--img--content {
   padding-top: var(--global--spacing-horizontal);
 }
 
