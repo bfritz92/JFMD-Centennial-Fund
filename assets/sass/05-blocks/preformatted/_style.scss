@@ -671,6 +671,24 @@ article.post_format-post-format-video {
   &--item {
     &--link {
       float: right;
+      &:before {
+        position: relative;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        content: url("http://brian.jewishdetroit.org/wp-content/uploads/2022/01/play-icon.svg");
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        z-index: 3;
+        display: block;
+      }
+      &:hover:before,
+      &:focus:before {
+        opacity: 1;
+      }
       &--content {
         padding-top: var(--global--spacing-horizontal);
       }
